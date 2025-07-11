@@ -1,11 +1,6 @@
 import cv2
 import os
 
-# Capture parameters
-CAMERA_ID = 0  # Camera ID (usually 0 for built-in webcam)
-CHESSBOARD_SIZE = (23, 15)  # Number of inner corners per chessboard row and column
-OUTPUT_DIRECTORY = 'calibration_images'  # Directory to save calibration images
-
 def capture_calibration_images(camera_id, chessboard_size, output_dir):
     """
     Capture images of a chessboard pattern for camera calibration.
